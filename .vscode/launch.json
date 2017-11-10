@@ -1,0 +1,90 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "S05_TestingGrounds (Debug)",
+			"request": "launch",
+			"preLaunchTask": "S05_TestingGrounds Mac Debug Build",
+			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds-Mac-Debug.app/Contents/MacOS/S05_TestingGrounds-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "S05_TestingGrounds (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "S05_TestingGrounds Mac DebugGame Build",
+			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds-Mac-DebugGame.app/Contents/MacOS/S05_TestingGrounds-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "S05_TestingGrounds (Development)",
+			"request": "launch",
+			"preLaunchTask": "S05_TestingGrounds Mac Development Build",
+			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds.app/Contents/MacOS/S05_TestingGrounds",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "S05_TestingGrounds (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "S05_TestingGrounds Mac Shipping Build",
+			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds-Mac-Shipping.app/Contents/MacOS/S05_TestingGrounds-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "S05_TestingGrounds (Test)",
+			"request": "launch",
+			"preLaunchTask": "S05_TestingGrounds Mac Test Build",
+			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds-Mac-Test.app/Contents/MacOS/S05_TestingGrounds-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "S05_TestingGroundsEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "S05_TestingGroundsEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject",
+				"-debug"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "S05_TestingGroundsEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "S05_TestingGroundsEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject",
+				"-debug"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "S05_TestingGroundsEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "S05_TestingGroundsEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		}
+	]
+}

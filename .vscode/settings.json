@@ -1,0 +1,11 @@
+{
+	"typescript.tsc.autoDetect": "off",
+	"files.exclude": {
+		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/.git": true,
+		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/.vscode": true,
+		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Content": true,
+		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Intermediate": true,
+		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.xcworkspace": true,
+		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Saved": true
+	}
+}
