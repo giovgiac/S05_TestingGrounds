@@ -12,7 +12,7 @@ EBTNodeResult::Type UChooseNextWaypoint::ExecuteTask(UBehaviorTreeComponent &Own
     UPatrolRoute* PatrolRoute = Pawn->FindComponentByClass<UPatrolRoute>();
     if (!ensure(PatrolRoute))
         return EBTNodeResult::Failed;
-
+    
     // Get Patrol Points
     TArray<AActor*> PatrolPoints = PatrolRoute->GetPatrolPoints();
     if (PatrolPoints.Num() == 0)
@@ -20,7 +20,7 @@ EBTNodeResult::Type UChooseNextWaypoint::ExecuteTask(UBehaviorTreeComponent &Own
         UE_LOG(LogTemp, Warning, TEXT("A guard is missing patrol points"));
         return EBTNodeResult::Failed;
     }
-
+    
     // Set Next Waypoint
     UBlackboardComponent* Component = OwnerComp.GetBlackboardComponent();
     int Index = Component->GetValueAsInt(IndexKey.SelectedKeyName);

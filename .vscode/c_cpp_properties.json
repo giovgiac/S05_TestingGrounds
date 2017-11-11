@@ -336,7 +336,7 @@
                 "/Users/Shared/Epic Games/UE_4.18/Engine/Source/Runtime/AudioMixer",
                 "/usr/local/include"
             ],
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "msvc-x64",
             "macFrameworkPath": [
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
