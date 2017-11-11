@@ -14,7 +14,7 @@ EBTNodeResult::Type UChooseNextWaypoint::ExecuteTask(UBehaviorTreeComponent &Own
         return EBTNodeResult::Failed;
     
     // Get Patrol Points
-    TArray<AActor*> PatrolPoints = PatrolRoute->GetPatrolPoints();
+    auto PatrolPoints = PatrolRoute->GetPatrolPoints();
     if (PatrolPoints.Num() == 0)
     {
         UE_LOG(LogTemp, Warning, TEXT("A guard is missing patrol points"));
