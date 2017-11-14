@@ -30,20 +30,20 @@ public:
 	class USoundBase* FireSound;
 
 	// AnimMontage to play each time we fire
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
 	class UAnimMontage* FireAnimation;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
 	class UAnimInstance* AnimInstance;
 
 public:
 	// Sets default values for this actor's properties
 	AGun();
 
+	// Fires a projectile
+	void OnFire();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-	// Fires a projectile
-	void OnFire();
 };

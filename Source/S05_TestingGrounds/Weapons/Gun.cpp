@@ -16,7 +16,6 @@ AGun::AGun()
 
 	// Create gun mesh
 	FP_Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("FP_Gun"));
-	FP_Gun->SetOnlyOwnerSee(true);
 	FP_Gun->bCastDynamicShadow = false;
 	FP_Gun->CastShadow = false;
 	FP_Gun->SetupAttachment(RootComponent);
@@ -31,8 +30,7 @@ AGun::AGun()
 void AGun::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	// TODO: Attach gun to actor on GripPoint
+
 }
 
 void AGun::OnFire()

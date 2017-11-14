@@ -21,6 +21,7 @@ class AFirstPersonCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FirstPersonCameraComponent;
 
+	class AGun* Gun;
 public:
 	AFirstPersonCharacter();
 
@@ -35,6 +36,10 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
+
+	/** The gun class to spawn. */
+	UPROPERTY(EditDefaultsOnly, Category="Setup")
+	TSubclassOf<class AGun> GunBlueprint;
 
 protected:
 	/** Handles moving forward/backward */
