@@ -4,87 +4,111 @@
 		{
 			"name": "S05_TestingGrounds (Debug)",
 			"request": "launch",
-			"preLaunchTask": "S05_TestingGrounds Mac Debug Build",
-			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds-Mac-Debug.app/Contents/MacOS/S05_TestingGrounds-Mac-Debug",
+			"preLaunchTask": "S05_TestingGrounds Win64 Debug Build",
+			"program": "C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\Binaries\\Win64\\S05_TestingGrounds-Win64-Debug.exe",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_4.18",
-			"type": "lldb"
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
 		},
 		{
 			"name": "S05_TestingGrounds (DebugGame)",
 			"request": "launch",
-			"preLaunchTask": "S05_TestingGrounds Mac DebugGame Build",
-			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds-Mac-DebugGame.app/Contents/MacOS/S05_TestingGrounds-Mac-DebugGame",
+			"preLaunchTask": "S05_TestingGrounds Win64 DebugGame Build",
+			"program": "C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\Binaries\\Win64\\S05_TestingGrounds-Win64-DebugGame.exe",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_4.18",
-			"type": "lldb"
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
 		},
 		{
 			"name": "S05_TestingGrounds (Development)",
 			"request": "launch",
-			"preLaunchTask": "S05_TestingGrounds Mac Development Build",
-			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds.app/Contents/MacOS/S05_TestingGrounds",
+			"preLaunchTask": "S05_TestingGrounds Win64 Development Build",
+			"program": "C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\Binaries\\Win64\\S05_TestingGrounds.exe",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_4.18",
-			"type": "lldb"
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
 		},
 		{
 			"name": "S05_TestingGrounds (Shipping)",
 			"request": "launch",
-			"preLaunchTask": "S05_TestingGrounds Mac Shipping Build",
-			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds-Mac-Shipping.app/Contents/MacOS/S05_TestingGrounds-Mac-Shipping",
+			"preLaunchTask": "S05_TestingGrounds Win64 Shipping Build",
+			"program": "C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\Binaries\\Win64\\S05_TestingGrounds-Win64-Shipping.exe",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_4.18",
-			"type": "lldb"
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
 		},
 		{
 			"name": "S05_TestingGrounds (Test)",
 			"request": "launch",
-			"preLaunchTask": "S05_TestingGrounds Mac Test Build",
-			"program": "/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Binaries/Mac/S05_TestingGrounds-Mac-Test.app/Contents/MacOS/S05_TestingGrounds-Mac-Test",
+			"preLaunchTask": "S05_TestingGrounds Win64 Test Build",
+			"program": "C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\Binaries\\Win64\\S05_TestingGrounds-Win64-Test.exe",
 			"args": [
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_4.18",
-			"type": "lldb"
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
 		},
 		{
 			"name": "S05_TestingGroundsEditor (Debug)",
 			"request": "launch",
-			"preLaunchTask": "S05_TestingGroundsEditor Mac Debug Build",
-			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"preLaunchTask": "S05_TestingGroundsEditor Win64 Debug Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
 			"args": [
-				"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject",
+				"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject",
 				"-debug"
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_4.18",
-			"type": "lldb"
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
 		},
 		{
 			"name": "S05_TestingGroundsEditor (DebugGame)",
 			"request": "launch",
-			"preLaunchTask": "S05_TestingGroundsEditor Mac DebugGame Build",
-			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"preLaunchTask": "S05_TestingGroundsEditor Win64 DebugGame Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Binaries\\Win64\\UE4Editor.exe",
 			"args": [
-				"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject",
+				"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject",
 				"-debug"
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_4.18",
-			"type": "lldb"
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
 		},
 		{
 			"name": "S05_TestingGroundsEditor (Development)",
 			"request": "launch",
-			"preLaunchTask": "S05_TestingGroundsEditor Mac Development Build",
-			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"preLaunchTask": "S05_TestingGroundsEditor Win64 Development Build",
+			"program": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Binaries\\Win64\\UE4Editor.exe",
 			"args": [
-				"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject"
+				"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject"
 			],
-			"cwd": "/Users/Shared/Epic Games/UE_4.18",
-			"type": "lldb"
+			"cwd": "C:\\Program Files\\Epic Games\\UE_4.18",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.18\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
 		}
 	]
 }

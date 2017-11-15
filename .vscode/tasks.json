@@ -2,633 +2,615 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"taskName": "S05_TestingGrounds Mac Debug Build",
+			"taskName": "S05_TestingGrounds Win32 Debug Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"Mac",
+				"Win32",
 				"Debug",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds Mac Debug Clean",
+			"taskName": "S05_TestingGrounds Win32 Debug Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"Mac",
+				"Win32",
 				"Debug",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds Mac DebugGame Build",
+			"taskName": "S05_TestingGrounds Win32 DebugGame Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"Mac",
+				"Win32",
 				"DebugGame",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds Mac DebugGame Clean",
+			"taskName": "S05_TestingGrounds Win32 DebugGame Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"Mac",
+				"Win32",
 				"DebugGame",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds Mac Development Build",
+			"taskName": "S05_TestingGrounds Win32 Development Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"Mac",
+				"Win32",
 				"Development",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds Mac Development Clean",
+			"taskName": "S05_TestingGrounds Win32 Development Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"Mac",
+				"Win32",
 				"Development",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
-			}
-		},
-		{
-			"taskName": "S05_TestingGrounds Mac Shipping Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"S05_TestingGrounds",
-				"Mac",
-				"Shipping",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds Mac Shipping Clean",
+			"taskName": "S05_TestingGrounds Win32 Shipping Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"Mac",
+				"Win32",
 				"Shipping",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
-			}
-		},
-		{
-			"taskName": "S05_TestingGrounds Mac Test Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"S05_TestingGrounds",
-				"Mac",
-				"Test",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds Mac Test Clean",
+			"taskName": "S05_TestingGrounds Win32 Shipping Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"Mac",
-				"Test",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"Win32",
+				"Shipping",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds IOS Debug Build",
+			"taskName": "S05_TestingGrounds Win32 Test Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"IOS",
+				"Win32",
+				"Test",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "S05_TestingGrounds Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"S05_TestingGrounds",
+				"Win32",
+				"Test",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "S05_TestingGrounds Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"S05_TestingGrounds",
+				"Win64",
 				"Debug",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds IOS Debug Clean",
+			"taskName": "S05_TestingGrounds Win64 Debug Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"IOS",
+				"Win64",
 				"Debug",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds IOS DebugGame Build",
+			"taskName": "S05_TestingGrounds Win64 DebugGame Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"IOS",
+				"Win64",
 				"DebugGame",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds IOS DebugGame Clean",
+			"taskName": "S05_TestingGrounds Win64 DebugGame Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"IOS",
+				"Win64",
 				"DebugGame",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds IOS Development Build",
+			"taskName": "S05_TestingGrounds Win64 Development Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"IOS",
+				"Win64",
 				"Development",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds IOS Development Clean",
+			"taskName": "S05_TestingGrounds Win64 Development Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"IOS",
+				"Win64",
 				"Development",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
-			}
-		},
-		{
-			"taskName": "S05_TestingGrounds IOS Shipping Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"S05_TestingGrounds",
-				"IOS",
-				"Shipping",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds IOS Shipping Clean",
+			"taskName": "S05_TestingGrounds Win64 Shipping Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"IOS",
+				"Win64",
 				"Shipping",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
-			}
-		},
-		{
-			"taskName": "S05_TestingGrounds IOS Test Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"S05_TestingGrounds",
-				"IOS",
-				"Test",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGrounds IOS Test Clean",
+			"taskName": "S05_TestingGrounds Win64 Shipping Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
-				"IOS",
-				"Test",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"Win64",
+				"Shipping",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "S05_TestingGrounds Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"S05_TestingGrounds",
+				"Win64",
+				"Test",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "S05_TestingGrounds Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"S05_TestingGrounds",
+				"Win64",
+				"Test",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 Debug Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"Debug",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 Debug Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"Debug",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 DebugGame Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"DebugGame",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 DebugGame Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"DebugGame",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 Development Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"Development",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 Development Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"Development",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 Shipping Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"Shipping",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 Shipping Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"Shipping",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 Test Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"Test",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
 			"taskName": "S05_TestingGrounds HTML5 Test Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGrounds",
 				"HTML5",
 				"Test",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGroundsEditor Mac Debug Build",
+			"taskName": "S05_TestingGroundsEditor Win64 Debug Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGroundsEditor",
-				"Mac",
+				"Win64",
 				"Debug",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGroundsEditor Mac Debug Clean",
+			"taskName": "S05_TestingGroundsEditor Win64 Debug Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGroundsEditor",
-				"Mac",
+				"Win64",
 				"Debug",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
-			}
-		},
-		{
-			"taskName": "S05_TestingGroundsEditor Mac DebugGame Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"S05_TestingGroundsEditor",
-				"Mac",
-				"DebugGame",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGroundsEditor Mac DebugGame Clean",
+			"taskName": "S05_TestingGroundsEditor Win64 DebugGame Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"S05_TestingGroundsEditor",
-				"Mac",
+				"Win64",
 				"DebugGame",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
-			}
-		},
-		{
-			"taskName": "S05_TestingGroundsEditor Mac Development Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"S05_TestingGroundsEditor",
-				"Mac",
-				"Development",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		},
 		{
-			"taskName": "S05_TestingGroundsEditor Mac Development Clean",
+			"taskName": "S05_TestingGroundsEditor Win64 DebugGame Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"S05_TestingGroundsEditor",
-				"Mac",
-				"Development",
-				"'/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/S05_TestingGrounds.uproject'",
-				"-waitmutex",
-				"-clean"
+				"Win64",
+				"DebugGame",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "S05_TestingGroundsEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"S05_TestingGroundsEditor",
+				"Win64",
+				"Development",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
+			}
+		},
+		{
+			"taskName": "S05_TestingGroundsEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"S05_TestingGroundsEditor",
+				"Win64",
+				"Development",
+				"\"C:\\Users\\Giovanni Giacomo\\Documents\\Unreal Projects\\S05_TestingGrounds\\S05_TestingGrounds.uproject\"",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.18"
 			}
 		}
 	]

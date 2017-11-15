@@ -1,10 +1,10 @@
 {
 	"typescript.tsc.autoDetect": "off",
 	"files.exclude": {
-		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/.git": true,
-		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/.vscode": true,
-		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Content": true,
-		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Intermediate": true,
-		"/Users/ggiacomo/Documents/Unreal Projects/S05_TestingGrounds/Saved": true
+		"C:/Users/Giovanni Giacomo/Documents/Unreal Projects/S05_TestingGrounds/.git": true,
+		"C:/Users/Giovanni Giacomo/Documents/Unreal Projects/S05_TestingGrounds/.vscode": true,
+		"C:/Users/Giovanni Giacomo/Documents/Unreal Projects/S05_TestingGrounds/Content": true,
+		"C:/Users/Giovanni Giacomo/Documents/Unreal Projects/S05_TestingGrounds/Intermediate": true,
+		"C:/Users/Giovanni Giacomo/Documents/Unreal Projects/S05_TestingGrounds/Saved": true
 	}
 }
