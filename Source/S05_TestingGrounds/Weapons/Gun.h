@@ -31,11 +31,16 @@ public:
 
 	// AnimMontage to play each time we fire
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-	class UAnimMontage* FireAnimation;
+	class UAnimMontage* FP_FireAnimation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-	class UAnimInstance* AnimInstance;
+	class UAnimMontage* TP_FireAnimation;
 
+	UPROPERTY()
+	class UAnimInstance* FP_AnimInstance;
+
+	UPROPERTY()
+	class UAnimInstance* TP_AnimInstance;
 public:
 	// Sets default values for this actor's properties
 	AGun();
