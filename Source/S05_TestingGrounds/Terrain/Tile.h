@@ -10,6 +10,10 @@ UCLASS()
 class S05_TESTINGGROUNDS_API ATile : public AActor
 {
 	GENERATED_BODY()
+
+private:
+	UPROPERTY()
+	class UActorPool* Pool;
 	
 public:	
 	// Sets default values for this actor's properties
@@ -25,6 +29,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="Procedural Generation")
 	void PlaceActors(TSubclassOf<AActor> ToSpawn, int32 MinSpawn = 1, int32 MaxSpawn = 1, float Radius = 500.0f, float MinScale = 1.0f, float MaxScale = 1.0f);
+
+	UFUNCTION(BlueprintCallable, Category="Pool")
+	void SetPool(class UActorPool* InPool);
 
 private:
 	bool CanSpawnAtLocation(FVector Location, float Radius);
