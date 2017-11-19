@@ -6,6 +6,16 @@
 #include "GameFramework/Actor.h"
 #include "Tile.generated.h"
 
+USTRUCT()
+struct FSpawnPosition
+{
+	GENERATED_USTRUCT_BODY()
+
+	FVector Location;
+	float Rotation;
+	float Scale;
+};
+
 UCLASS()
 class S05_TESTINGGROUNDS_API ATile : public AActor
 {
@@ -15,6 +25,18 @@ private:
 	UPROPERTY()
 	class UActorPool* Pool;
 	
+	class AActor* NavMeshBoundsVolume;
+
+protected:
+	UPROPERTY(EditDefaultsOnly, Category = "Navigation")
+	FVector NavigationBoundsOffset;
+
+	UPROPERTY(EditDefaultsOnly, Category="Spawning")
+	FVector MinimumExtent;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Spawning")
+	FVector MaximumExtent;
+
 public:	
 	// Sets default values for this actor's properties
 	ATile();
@@ -23,12 +45,17 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UFUNCTION(BlueprintCallable, Category="Procedural Generation")
+	UFUNCTION(BlueprintCallable, Category="Spawning")
 	void PlaceActors(TSubclassOf<AActor> ToSpawn, int32 MinSpawn = 1, int32 MaxSpawn = 1, float Radius = 500.0f, float MinScale = 1.0f, float MaxScale = 1.0f);
+
+	UFUNCTION(BlueprintCallable, Category = "Spawning")
+	void PlaceAIPawns(TSubclassOf<APawn> ToSpawn, int32 MinSpawn = 1, int32 MaxSpawn = 1, float Radius = 500.0f);
 
 	UFUNCTION(BlueprintCallable, Category="Pool")
 	void SetPool(class UActorPool* InPool);
@@ -38,6 +65,12 @@ private:
 
 	bool FindEmptyLocation(FVector& OutLocation, float Radius);
 
-	void PlaceActor(TSubclassOf<AActor> ToSpawn, FVector SpawnPoint, float Rotation, float Scale);
+	TArray<FSpawnPosition> RandomSpawnPositions(int32 MinSpawn, int32 MaxSpawn, float Radius, float MinScale, float MaxScale);
+
+	void PlaceActor(TSubclassOf<AActor> ToSpawn, FSpawnPosition& SpawnPosition);
+
+	void PlaceAIPawn(TSubclassOf<APawn> ToSpawn, FSpawnPosition& SpawnPosition);
 	
+	void PositionNavMeshBoundsVolume();
+
 };

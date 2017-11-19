@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "ActorPool.h"
-
+#include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
 UActorPool::UActorPool()
@@ -14,15 +14,18 @@ UActorPool::UActorPool()
 
 void UActorPool::Add(AActor* ActorToAdd)
 {
-
+	Pool.Push(ActorToAdd);
 }
 
 AActor* UActorPool::Checkout()
 {
-	return NULL;
+	if (Pool.Num() == 0)
+		return NULL;
+
+	return Pool.Pop();
 }
 
 void UActorPool::Return(AActor* ActorToReturn)
 {
-
+	Add(ActorToReturn);
 }

@@ -22,4 +22,6 @@ public:
 	
 	void Return(AActor* ActorToReturn);
 
+private:
+	TArray<AActor*> Pool;
 };
