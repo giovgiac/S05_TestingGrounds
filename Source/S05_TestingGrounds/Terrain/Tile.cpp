@@ -91,12 +91,10 @@ bool ATile::FindEmptyLocation(FVector& OutLocation, float Radius)
 
 void ATile::PlaceActor(TSubclassOf<AActor> ToSpawn, FSpawnPosition& SpawnPosition)
 {
-	AActor* Spawned = GetWorld()->SpawnActor<AActor>(ToSpawn);
+	AActor* Spawned = GetWorld()->SpawnActor<AActor>(ToSpawn, SpawnPosition.Location, FRotator(0.0f, SpawnPosition.Rotation, 0.0f));
 
 	if (Spawned != NULL)
 	{
-		Spawned->SetActorRelativeLocation(SpawnPosition.Location);
-		Spawned->SetActorRotation(FRotator(0.0f, SpawnPosition.Rotation, 0.0f));
 		Spawned->SetActorScale3D(FVector(SpawnPosition.Scale));
 		Spawned->AttachToActor(this, FAttachmentTransformRules(EAttachmentRule::KeepRelative, false));
 	}
@@ -104,13 +102,11 @@ void ATile::PlaceActor(TSubclassOf<AActor> ToSpawn, FSpawnPosition& SpawnPositio
 
 void ATile::PlaceActor(TSubclassOf<APawn> ToSpawn, FSpawnPosition& SpawnPosition)
 {
-	APawn* Pawn = GetWorld()->SpawnActor<APawn>(ToSpawn);
+	APawn* Pawn = GetWorld()->SpawnActor<APawn>(ToSpawn, SpawnPosition.Location, FRotator(0.0f, SpawnPosition.Rotation, 0.0f));
 
 	if (Pawn != NULL)
 	{
 		Pawn->AttachToActor(this, FAttachmentTransformRules(EAttachmentRule::KeepRelative, false));
-		Pawn->SetActorRelativeLocation(SpawnPosition.Location);
-		Pawn->SetActorRotation(FRotator(0.0f, SpawnPosition.Rotation, 0.0f));
 		Pawn->SpawnDefaultController();
 		Pawn->Tags.Add(TEXT("Enemy"));
 	}
@@ -141,7 +137,10 @@ void ATile::BeginPlay()
 
 void ATile::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
-	Pool->Return(NavMeshBoundsVolume);
+	if (Pool != NULL && NavMeshBoundsVolume != NULL)
+	{
+		Pool->Return(NavMeshBoundsVolume);
+	}
 }
 
 // Called every frame

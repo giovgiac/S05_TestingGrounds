@@ -14,7 +14,10 @@ UActorPool::UActorPool()
 
 void UActorPool::Add(AActor* ActorToAdd)
 {
-	Pool.Push(ActorToAdd);
+	if (ActorToAdd != NULL)
+	{
+		Pool.Push(ActorToAdd);
+	}
 }
 
 AActor* UActorPool::Checkout()
